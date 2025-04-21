@@ -3,33 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Wedding</title>
+  <title>Camilla & Simon's Wedding</title>
   <style>
+    :root {
+      --purple-deep: rgb(50, 14, 59);
+      --green-bright: rgb(19, 138, 54);
+      --green-soft: rgb(21, 122, 76);
+      --blue-ocean: rgb(52, 138, 167);
+      --navy-accent: rgb(16, 46, 66);
+    }
+
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background: #fff8f0;
-      color: #333;
+      background: #fafafa;
+      color: var(--navy-accent);
     }
+
     header {
-      background: #f6e7d7;
+      background: linear-gradient(135deg, var(--purple-deep), var(--blue-ocean));
       padding: 3rem 1rem;
       text-align: center;
+      color: white;
+      background-image: url('https://www.transparenttextures.com/patterns/flower.png');
     }
+
     header h1 {
       margin: 0;
-      font-size: 3rem;
-      color: #b45f06;
+      font-size: 3.5rem;
+      font-family: 'Brush Script MT', cursive;
     }
+
     header p {
       font-size: 1.5rem;
       margin-top: 0.5rem;
     }
+
     section {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
+
     .couple {
       display: flex;
       justify-content: space-around;
@@ -38,78 +53,113 @@
       text-align: center;
       margin-top: 2rem;
     }
+
     .person {
       flex: 1;
       margin: 1rem;
     }
+
     .person img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #f3d9c1;
+      border: 5px solid var(--green-soft);
+      box-shadow: 0 0 15px rgba(21, 122, 76, 0.5);
     }
+
     .person h2 {
       margin: 1rem 0 0.5rem;
+      color: var(--purple-deep);
     }
+
     .details {
-      background: #fff0e5;
+      background: #f0fdf6;
+      border-left: 6px solid var(--green-bright);
       border-radius: 12px;
       padding: 2rem;
       text-align: center;
       margin-top: 3rem;
     }
+
     .details h3 {
       margin-top: 0;
+      color: var(--green-soft);
     }
+
+    .details p {
+      font-size: 1.2rem;
+    }
+
     .rsvp-btn {
       display: inline-block;
       padding: 1rem 2rem;
-      background: #b45f06;
+      background: var(--purple-deep);
       color: white;
       text-decoration: none;
       border-radius: 8px;
       margin-top: 2rem;
       font-weight: bold;
+      transition: background 0.3s ease;
     }
+
+    .rsvp-btn:hover {
+      background: var(--green-bright);
+    }
+
+    .floral-divider {
+      width: 100%;
+      height: 60px;
+      background: url('https://www.transparenttextures.com/patterns/floral.png') repeat-x center;
+      background-size: contain;
+      opacity: 0.1;
+      margin: 3rem 0;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
-      background: #f6e7d7;
-      margin-top: 4rem;
+      background: var(--navy-accent);
+      color: white;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Emma & Liam</h1>
-    <p>We're getting married!</p>
+    <h1>Camilla & Simon</h1>
+    <p>Join us as we begin our forever</p>
   </header>
+
+  <div class="floral-divider"></div>
 
   <section>
     <div class="couple">
       <div class="person">
-        <img src="https://via.placeholder.com/150" alt="Emma">
-        <h2>Emma Stone</h2>
-        <p>She’s creative, kind, and full of light. Emma lights up every room she walks into.</p>
+        <img src="https://via.placeholder.com/160" alt="Camilla">
+        <h2>Camilla Rose</h2>
+        <p>Creative, kind, and graceful—Camilla brings light and love into every moment.</p>
       </div>
       <div class="person">
-        <img src="https://via.placeholder.com/150" alt="Liam">
-        <h2>Liam Carter</h2>
-        <p>He's funny, thoughtful, and her perfect match. Liam brings the adventure.</p>
+        <img src="https://via.placeholder.com/160" alt="Simon">
+        <h2>Simon Blake</h2>
+        <p>Adventurous, thoughtful, and strong—Simon is the heart that makes Camilla whole.</p>
       </div>
     </div>
 
     <div class="details">
       <h3>Save the Date</h3>
-      <p><strong>October 12, 2025</strong><br>Sunset Gardens, Santa Barbara, CA</p>
+      <p><strong>September 6, 2025</strong><br>
+      Lavender Hill Estate, Napa Valley, CA</p>
       <a class="rsvp-btn" href="#">RSVP Now</a>
     </div>
   </section>
 
+  <div class="floral-divider"></div>
+
   <footer>
-    <p>We can't wait to celebrate with you 💍</p>
+    <p>We can't wait to celebrate this beautiful journey with you 💜💚💙</p>
   </footer>
 
 </body>
