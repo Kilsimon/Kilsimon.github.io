@@ -1,7 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Wedding</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: #f6e7d7;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #b45f06;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .couple {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .person {
+      flex: 1;
+      margin: 1rem;
+    }
+    .person img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #f3d9c1;
+    }
+    .person h2 {
+      margin: 1rem 0 0.5rem;
+    }
+    .details {
+      background: #fff0e5;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .details h3 {
+      margin-top: 0;
+    }
+    .rsvp-btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #b45f06;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 2rem;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f6e7d7;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <header>
+    <h1>Emma & Liam</h1>
+    <p>We're getting married!</p>
+  </header>
+
+  <section>
+    <div class="couple">
+      <div class="person">
+        <img src="https://via.placeholder.com/150" alt="Emma">
+        <h2>Emma Stone</h2>
+        <p>She’s creative, kind, and full of light. Emma lights up every room she walks into.</p>
+      </div>
+      <div class="person">
+        <img src="https://via.placeholder.com/150" alt="Liam">
+        <h2>Liam Carter</h2>
+        <p>He's funny, thoughtful, and her perfect match. Liam brings the adventure.</p>
+      </div>
+    </div>
+
+    <div class="details">
+      <h3>Save the Date</h3>
+      <p><strong>October 12, 2025</strong><br>Sunset Gardens, Santa Barbara, CA</p>
+      <a class="rsvp-btn" href="#">RSVP Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>We can't wait to celebrate with you 💍</p>
+  </footer>
+
 </body>
 </html>
