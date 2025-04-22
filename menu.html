@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Camilla & Simon</title>
+  <title>Wedding Menu</title>
   <style>
     :root {
       --purple-deep: rgb(50, 14, 59);
@@ -16,7 +16,7 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background: #fafafa;
+      background: #fffefc;
       color: var(--navy-accent);
     }
 
@@ -33,23 +33,27 @@
       font-weight: bold;
     }
 
-    header {
-      text-align: center;
-      background: linear-gradient(to bottom right, var(--purple-deep), var(--blue-ocean));
-      color: white;
-      padding: 4rem 1rem;
+    section {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #f0fdf6;
+      border-left: 6px solid var(--blue-ocean);
+      border-radius: 8px;
     }
 
-    header h1 {
-      font-size: 3.5rem;
-      font-family: 'Brush Script MT', cursive;
+    h2 {
+      color: var(--blue-ocean);
     }
 
-    .hero-img {
-      width: 100%;
-      max-height: 600px;
-      object-fit: cover;
-      display: block;
+    ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    li::before {
+      content: "🍷 ";
     }
 
     footer {
@@ -68,15 +72,19 @@
     <a href="menu.html">Menu</a>
   </nav>
 
-  <header>
-    <h1>Camilla & Simon</h1>
-    <p>We're getting married — May 9, 2026</p>
-  </header>
-
-  <img class="hero-img" src="https://via.placeholder.com/1600x600?text=Camilla+%26+Simon" alt="Couple Photo" />
+  <section>
+    <h2>Wedding Menu</h2>
+    <p>The menu is still being finalized, but here are some of the delicious ideas we’re working with:</p>
+    <ul>
+      <li>Starter: Seasonal Greens with Balsamic Glaze</li>
+      <li>Main Course: Herb-Crusted Roast with Seasonal Vegetables</li>
+      <li>Dessert: Chocolate Mousse with Raspberry Coulis</li>
+      <li>Drinks: Wine Pairing, Sparkling Water, Signature Cocktails</li>
+    </ul>
+  </section>
 
   <footer>
-    <p>Welcome to our wedding website 💜💚💙</p>
+    <p>More details coming soon — bring your appetite 🍴</p>
   </footer>
 
 </body>
