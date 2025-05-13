@@ -6,28 +6,26 @@
   <title>Wedding Menu</title>
   <style>
     :root {
-      --purple-deep: rgb(50, 14, 59);
-      --green-bright: rgb(19, 138, 54);
-      --green-soft: rgb(21, 122, 76);
-      --blue-ocean: rgb(52, 138, 167);
-      --navy-accent: rgb(16, 46, 66);
+      --deep-green: #0A342F;
+      --gold-accent: #B28538;
+      --light-cream: #E4D9C4;
     }
 
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background: #fffefc;
-      color: var(--navy-accent);
+      background: var(--light-cream);
+      color: var(--deep-green);
     }
 
     nav {
-      background: var(--purple-deep);
+      background: var(--deep-green);
       text-align: center;
-      padding: 1rem 0;
+      padding: 1rem;
     }
 
     nav a {
-      color: white;
+      color: var(--light-cream);
       text-decoration: none;
       margin: 0 1rem;
       font-weight: bold;
@@ -37,13 +35,13 @@
       max-width: 700px;
       margin: 2rem auto;
       padding: 2rem;
-      background: #f0fdf6;
-      border-left: 6px solid var(--blue-ocean);
+      background: white;
+      border-left: 6px solid var(--gold-accent);
       border-radius: 8px;
     }
 
     h2 {
-      color: var(--blue-ocean);
+      color: var(--gold-accent);
     }
 
     ul {
@@ -53,14 +51,14 @@
     }
 
     li::before {
-      content: "🍷 ";
+      content: "🍽️ ";
     }
 
     footer {
       text-align: center;
       padding: 2rem;
-      background: var(--navy-accent);
-      color: white;
+      background: var(--deep-green);
+      color: var(--light-cream);
     }
   </style>
 </head>
@@ -84,7 +82,7 @@
   </section>
 
   <footer>
-    <p>More details coming soon — bring your appetite 🍴</p>
+    <p>More details coming soon — bring your appetite 🍷</p>
   </footer>
 
 </body>
