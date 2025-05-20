@@ -6,7 +6,8 @@
   <title>Camilla & Simon</title>
   <style>
     :root {
-      --deep-green: #0A342F;
+      --dark-green: #1F2B20;
+	  --deep-green: #0A342F;
       --gold-accent: #B28538;
       --light-cream: #E4D9C4;
     }
@@ -14,8 +15,17 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background: var(--light-cream);
       color: var(--deep-green);
+      background-color: var(--light-cream);
+    }
+
+    .page-content {
+      background-color: rgba(228, 217, 196, 0.85); /* semi-transparent cream */
+      margin: 2rem auto;
+      padding: 2rem;
+      max-width: 900px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
 
     nav {
@@ -33,8 +43,6 @@
 
     header {
       text-align: center;
-      background: var(--deep-green);
-      color: var(--light-cream);
       padding: 4rem 1rem;
     }
 
@@ -46,9 +54,9 @@
 
     .hero-img {
       width: 100%;
-      max-height: 600px;
-      object-fit: cover;
-      display: block;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 1rem;
     }
 
     footer {
@@ -67,12 +75,14 @@
     <a href="menu.html">Menu</a>
   </nav>
 
-  <header>
-    <h1>Camilla & Simon</h1>
-    <p>We're getting married — May 9, 2026</p>
-  </header>
+  <div class="page-content">
+    <header>
+      <h1>Camilla & Simon</h1>
+      <p>We're getting married — May 9, 2026</p>
+    </header>
 
-  <img class="hero-img" src="https://via.placeholder.com/1600x600?text=Camilla+%26+Simon" alt="Couple Photo" />
+    <img class="hero-img" src="images/Forlovet.jpg" alt="Couple Photo" />
+  </div>
 
   <footer>
     <p>Welcome to our wedding website 💛🌿</p>

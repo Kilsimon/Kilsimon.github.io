@@ -2,4 +2,25 @@
   --deep-green: #0A342F;
   --gold-accent: #B28538;
   --light-cream: #E4D9C4;
+  --bg-image: url('C:\Users\simon\OneDrive\Dokumenter\GitHub\Kilsimon.github.io\Test.jpg'); /* Replace this */
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: var(--deep-green);
+  background: var(--light-cream);
+  background-size: 80%;        /* ZOOMED OUT */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--light-cream); /* fallback */
+}
+
+.page-content {
+  background-color: rgba(228, 217, 196, 0.85); /* Light cream with transparency */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 2rem auto;
 }
