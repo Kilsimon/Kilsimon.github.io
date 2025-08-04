@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Menu</title>
+  <style>
+    :root {
+      --deep-green: #0A342F;
+      --gold-accent: #B28538;
+      --light-cream: #E4D9C4;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: var(--light-cream);
+      color: var(--deep-green);
+    }
+
+    nav {
+      background: var(--deep-green);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: var(--light-cream);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-left: 6px solid var(--gold-accent);
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: var(--gold-accent);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    li::before {
+      content: "🍽️ ";
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--deep-green);
+      color: var(--light-cream);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="info.html">Practical Info</a>
+    <a href="menu.html">Menu</a>
+  </nav>
+
+  <section>
+    <h2>Wedding Menu</h2>
+    <p>The menu is still being finalized, but here are some of the delicious ideas we’re working with:</p>
+    <ul>
+      <li>Starter: Seasonal Greens with Balsamic Glaze</li>
+      <li>Main Course: Herb-Crusted Roast with Seasonal Vegetables</li>
+      <li>Dessert: Chocolate Mousse with Raspberry Coulis</li>
+      <li>Drinks: Wine Pairing, Sparkling Water, Signature Cocktails</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>More details coming soon — bring your appetite 🍷</p>
+  </footer>
+
+</body>
+</html>
